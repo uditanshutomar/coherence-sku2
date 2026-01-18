@@ -1,0 +1,21 @@
+{
+    "version": "cdr-1.2",
+    "decision_receipt_id": "cdr-test-001",
+    "gate_receipt_id": "cgr-test-001",
+    "aud": "service-a",
+    "tenant_id": "tenant-1",
+    "subject": {
+        "action_id": "act-123",
+        "action_digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "policy": {
+        "policy_digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "decision": "APPROVE",
+    "approver": {
+        "user_id": "user@example.com",
+        "role": "admin_role"
+    },
+    "issued_at": "2026-01-15T12:00:00Z",
+    "expires_at": "2026-01-20T12:00:00Z"
+}

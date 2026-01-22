@@ -30,7 +30,7 @@ class Decider(BaseModel, extra="forbid"):
 class GateReceipt(BaseModel, extra="forbid"):
     version: Literal["cgr-1.2"]
     gate_receipt_id: str
-    verdict: Literal["ADMIT", "HALT", "ESCALATE", "DEFER"]
+    verdict: Literal["ADMIT", "ESCALATE", "STOP"]
     aud: str
     tenant_id: str
     subject: Subject
@@ -55,7 +55,7 @@ class DecisionReceipt(BaseModel, extra="forbid"):
     tenant_id: str
     subject: Subject
     policy: PolicyCDR
-    decision: Literal["APPROVE", "ESCALATE"]
+    decision: Literal["ADMIT", "ESCALATE", "STOP"]
     approver: Approver
     rationale: Optional[str] = None
     issued_at: str = Field(pattern=TIMESTAMP_PATTERN)

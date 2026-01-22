@@ -1,7 +1,7 @@
 {
   "version": "cgr-1.2",
   "gate_receipt_id": "cgr-test-001",
-  "verdict": "HALT",
+  "verdict": "STOP",
   "aud": "service-a",
   "tenant_id": "tenant-1",
   "subject": {

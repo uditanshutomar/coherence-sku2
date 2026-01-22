@@ -11,11 +11,11 @@
     "policy": {
         "policy_digest": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
-    "decision": "APPROVE",
+    "decision": "ADMIT",
     "approver": {
         "user_id": "user@example.com",
         "role": "admin_role"
     },
-    "issued_at": "2026-01-15T12:00:00Z",
-    "expires_at": "2026-01-20T12:00:00Z"
+    "issued_at": "2026-01-21T12:00:00Z",
+    "expires_at": "2026-01-25T12:00:00Z"
 }

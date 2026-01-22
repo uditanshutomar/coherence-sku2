@@ -103,8 +103,8 @@ class Verifier:
             ):
                 return False
 
-            # 5. Binding validation (if APPROVE)
-            if cdr_model.decision == "APPROVE":
+            # 5. Binding validation (if ADMIT)
+            if cdr_model.decision == "ADMIT":
                 # Verify gate_receipt_id reference
                 if cdr_model.gate_receipt_id != cgr_model.gate_receipt_id:
                     return False

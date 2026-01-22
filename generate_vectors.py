@@ -69,7 +69,7 @@ def main():
     # 5. Invalid Payload CGR (Tampered)
     print("Generating invalid_payload_gate_receipt.json...")
     inv_pay = copy.deepcopy(valid_cgr)
-    inv_pay["verdict"] = "HALT" # Was ADMIT, but signature is for ADMIT
+    inv_pay["verdict"] = "STOP" # Was ADMIT, but signature is for ADMIT
     # Keep signature same -> verification should fail
     with open(f"{OUTPUT_DIR}/invalid_payload_gate_receipt.json", "w") as f:
         json.dump(inv_pay, f, indent=2)

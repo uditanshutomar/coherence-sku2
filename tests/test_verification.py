@@ -30,7 +30,7 @@ class TestTamperedPayload:
         """Tampered payload must fail verification."""
         receipt = load_vector("unsigned_cgr.json")
         signed = sign_payload(receipt, private_key)
-        signed["verdict"] = "HALT"  # Tamper after signing
+        signed["verdict"] = "STOP"  # Tamper after signing
         assert verifier.verify_gate_receipt(signed) is False
 
     def test_tampered_tenant_id_detected(self, verifier, private_key):
